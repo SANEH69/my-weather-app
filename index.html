@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>My Weather App</title>
-</head>
-<body>
+  </head>
+  <body class="outer">
     <div class="inner">
-        <header>
-          <form>
-            <input
-              type="search"
-              placeholder="Enter a city.."
-              class="city"
-              id = "search-input-text"
-              required
-            />
-            <input type="submit" value="Search" class="submit" />
-          </form>
-        </header>
-        <main>
-          <div class="current-weather">
-            <div>
-              <h1 class="current-city" id="current-city">Paris</h1>
-              <div class=forecast>
-              <p>
-                <span class=date> Saturday 15:32</span>, moderate rain <br />
-                Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
-              </p>
-              <span class="sun" id="sun"> ☀️ </span>
-                <span class="current-temp" id="current-temp"> 24°C </span>
-            </div>
-          </div>
-        </main>
-        <footer>
+      <header>
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            class="city"
+            id="search-input-text"
+            required
+          />
+          <input type="submit" value="Search" class="submit" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <h1 class="current-city" id="current-city">Paris</h1>
+          <p class="current-temp" id="current-temp">☀️24°C</p>
+        </div>
+        <div class="forecast">
           <p>
-            This project was coded by
-            <a href="https://github.com/SANEH69/my-weather-forecast-app" target="_blank">Sanelisiwe Ngubane</a> and is
-            <a href="https://github.com/SANEH69" target="_blank"> on GitHub</a> and
-            <a href="https://grand-kataifi-f93725.netlify.app/" target="_blank">hosted on Netlify</a>
+            <span class="date"> Saturday 15:32</span>, moderate rain <br />
+            Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
           </p>
-        </footer>
-        </div> 
-</body>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a
+          href="https://github.com/SANEH69/my-weather-forecast-app"
+          target="_blank"
+          >Sanelisiwe Ngubane</a
+        >
+        and is
+        <a href="https://github.com/SANEH69" target="_blank"> on GitHub</a> and
+        <a href="https://grand-kataifi-f93725.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+  </body>
 </html>

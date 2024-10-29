@@ -1,0 +1,40 @@
+.inner {
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 30px 10px 170px 10px;
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  box-shadow: 20px;
+}
+.outer {
+  background: aliceblue;
+}
+.city {
+  padding: 10px 150px;
+  border-radius: 50px;
+}
+.submit {
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+.current-temp {
+  text-align: center;
+  margin-top: auto;
+  font-size: 40px;
+  font-weight: bolder;
+}
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 50px;
+  text-align: center;
+}
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 17px;
+  text-align: center;
+}
+strong {
+  color: blue;
+}
