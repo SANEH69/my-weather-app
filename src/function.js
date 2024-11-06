@@ -11,14 +11,12 @@ let day = days[now.getDay()];
 
 span.innerHTML = `${day} ${hours}:${minutes}`;
 
-function search(event) {
+function searchForm(event) {
     event.preventDefault();
-    let searchInput = document.querySelector("#seach-input-text");
-
-    let h1 = document.querySelector("h1");
-    h1.innerHTML = `search for ${searchInput.value}`;
-    console.log(h1);
+    let searchInput = document.querySelector("#search-input-text");
+    let cityElement = document.querySelector("#current-city");
+    cityElement.innerHTML = searchInput.value;
 }
 
-let form = document.querySelector("#search-form");
-form.addEventListener('submit', search);
+let formElement = document.querySelector("#search-form");
+formElement.addEventListener("submit", searchForm);
