@@ -14,7 +14,9 @@ span.innerHTML = `${day} ${hours}:${minutes}`;
 function displayTemperature(response) {
     let tempElement = document.querySelector("#current-temp");
     let temperature = Math.round(response.data.temperature.current);
+    let cityElement = document.querySelector("#current-city");
 
+    cityElement.innerHTML = response.data.city;
     tempElement.innerHTML = `${temperature}°C`;
 }
 
@@ -27,8 +29,6 @@ function displayTemperature(response) {
 function searchForm(event) {
     event.preventDefault();
     let searchInput = document.querySelector("#search-input-text");
-    let cityElement = document.querySelector("#current-city");
-    cityElement.innerHTML = searchInput.value;
     searchKey(searchInput.value);
 }
 
