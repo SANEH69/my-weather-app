@@ -34,3 +34,5 @@ function searchForm(event) {
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchForm);
+
+searchKey("Durban");
