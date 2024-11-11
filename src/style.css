@@ -25,9 +25,10 @@ form {
   padding: 10px 30px;
   border-radius: 50px;
 }
-.emoji {
+.icon {
   text-align: center;
   margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 40px;
 }
 .current-temp {
