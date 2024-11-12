@@ -54,3 +54,9 @@ strong {
 footer {
   text-align: center;
 }
+.weekly-forecast {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  
+}
