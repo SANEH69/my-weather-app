@@ -54,9 +54,35 @@ strong {
 footer {
   text-align: center;
 }
-.weekly-forecast {
+.weekly-forecast-three {
   display: flex;
   justify-content: space-evenly;
-  text-decoration: none;
-  
+  border: solid 1px blue;
+  border-radius: 50px;
+  margin: 0px 50px;
+}
+.weekly-forecast-two {
+  display: flex;
+  justify-content: space-evenly;
+  border: solid 1px blue;
+  border-radius: 50px;
+  margin: 0px 80px;
+}
+.weekly-forecast-day {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.weekly-forecast-icon {
+  text-align: center;
+  font-size: 30px;
+}
+.weekly-forecast-temperatures {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.weekly-forecast-temperature {
+  padding: 0px 7px;
 }
