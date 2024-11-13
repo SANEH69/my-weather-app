@@ -29,6 +29,8 @@ function displayTemperature(response) {
     dayElement.innerHTML = formatDate(date);
     iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon" />`;
     tempElement.innerHTML = `${temperature}°C`;
+
+    getForecast(response.data.city);
 }
 
     function searchKey(city) {
@@ -46,7 +48,14 @@ function searchForm(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchForm);
 
-function displayForecast() {
+function getForecast(city) {
+    let apiKey = "04d1784de2be03a1bd2o2db8tf6b23e4";
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+    axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+    console.log(response);
     let days = ["Thurs", "Fri", "Sat", "Sun", "Mon"];
     let forecastHtml = "";
 
@@ -66,4 +75,3 @@ function displayForecast() {
     forecastElement.innerHTML = forecastHtml;
 }
 searchKey("Durban");
-displayForecast();
