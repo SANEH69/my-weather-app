@@ -58,7 +58,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   border: solid 1px blue;
-  border-radius: 50px;
+  border-radius: 30px;
   margin: 0px 50px;
 }
 .weekly-forecast-day {
