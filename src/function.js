@@ -46,4 +46,24 @@ function searchForm(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchForm);
 
+function displayForecast() {
+    let days = ["Thurs", "Fri", "Sat", "Sun", "Mon"];
+    let forecastHtml = "";
+
+    days.forEach(function (day) {
+        forecastHtml = forecastHtml +
+        `<div class="weekly-forecast-day">
+        <div class="weekly-forecast-date">${day}</div>
+        <div class="weekly-forecast-icon">☀️</div>
+        <div class="weekly-forecast-temperatures">
+          <div class="weekly-forecast-temperature"><strong>29°C</strong></div>
+          <div class="weekly-forecast-temperature">9°</div>
+      </div>
+      </div>`;
+    });
+
+    let forecastElement = document.querySelector("#weekly-forecast");
+    forecastElement.innerHTML = forecastHtml;
+}
 searchKey("Durban");
+displayForecast();
