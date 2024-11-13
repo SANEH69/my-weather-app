@@ -54,19 +54,12 @@ strong {
 footer {
   text-align: center;
 }
-.weekly-forecast-three {
+.weekly-forecast {
   display: flex;
   justify-content: space-evenly;
   border: solid 1px blue;
   border-radius: 50px;
   margin: 0px 50px;
-}
-.weekly-forecast-two {
-  display: flex;
-  justify-content: space-evenly;
-  border: solid 1px blue;
-  border-radius: 50px;
-  margin: 0px 80px;
 }
 .weekly-forecast-day {
   text-align: center;
