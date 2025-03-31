@@ -5,12 +5,12 @@
   display: block;
   margin: auto;
   max-width: 40%;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/020/original/pexels-d-goth-day.jpg?1730322155");
+  background: white;
   background-size: cover;
   box-shadow: 20px;
 }
 .outer {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/019/original/pexels-njeromin-night2.jpg?1730322054");
+  background: black;
   background-size: cover;
 }
 form {
