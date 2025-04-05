@@ -71,6 +71,8 @@ a:hover {
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-weight: bold;
+  font-family: monospace;
 }
 .weekly-forecast-icon {
   text-align: center;
@@ -83,4 +85,31 @@ a:hover {
 }
 .weekly-forecast-temperature {
   padding: 0px 7px;
+}
+@media (max-width: 1300px) {
+  .outer .inner {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+  }
+  .weekly-forecast {
+    margin: 0px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+  }
+  .weekly-forecast-icon {
+    font-size: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .city {
+    padding: 5px 20px;
+  }
+  .submit {
+    padding: 5px;
+  }
 }
